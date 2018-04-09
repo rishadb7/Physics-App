@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mydomain.physics.physicsapps.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            >
+
+        </android.support.v7.widget.Toolbar>
+
+
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+            <FrameLayout
+                android:id="@+id/fragmentHolder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+            </FrameLayout>
+
+
+
+
+
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:paddingLeft="20dp"
+        android:paddingStart="20dp"
+        android:paddingRight="20dp"
+        android:paddingEnd="20dp"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/navigation_menu"
+        android:background="@color/pink"
+        app:headerLayout="@layout/header"
+        app:itemIconTint="@color/white"
+        >
+
+        <ImageView
+            android:layout_marginTop="18dp"
+            android:id="@+id/backArrow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/backarrow"
+            />
+
+        <LinearLayout
+            android:gravity="bottom"
+            android:layout_marginBottom="50dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:id="@+id/facebook1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/fb"/>
+            <ImageView
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:id="@+id/instagram1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/instagram"/>
+            <ImageView
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:id="@+id/shareApp1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/share"
+                />
+
+
+        </LinearLayout>
+
+    </android.support.design.widget.NavigationView>
+
+
+
+
+</android.support.v4.widget.DrawerLayout>
+
+
+
